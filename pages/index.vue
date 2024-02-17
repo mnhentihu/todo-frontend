@@ -29,3 +29,8 @@
     </div>
 </template>
   
+<script setup>
+useHead({
+    title: 'TODO - Login',
+})
+</script>

@@ -8,8 +8,9 @@
                     <span class="text-md">E-Mail</span>
                 </div>
                 <form class="w-full flex flex-col gap-2" @submit.prevent="">
-                    <input type="text" placeholder="Title">
-                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Description"></textarea>
+                    <input type="text" placeholder="Title" class="border border-slate-600 p-2">
+                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Description"
+                        class="border border-slate-600 p-2"></textarea>
                     <button class="shadow-slate-500 shadow-xl w-full rounded-lg bg-slate-300 h-auto hover:bg-slate-400">Add
                         TODO</button>
                 </form>
@@ -28,9 +29,10 @@
                                     Kawan</span>
                                 <span class="w-1/3 text-right">ONGOING</span>
                             </div>
-                            <p class="w-full text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                mattis,
-                                purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac elit. </p>
+                            <p class="w-full text-wrap text-xs ">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Fusce mattis, purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac
+                                elit. </p>
                         </div>
                         <hr class="border-b-0 border-slate-400 my-1 ">
                     </li>
@@ -42,9 +44,10 @@
                                     Kawan</span>
                                 <span class="w-1/3 text-right">ONGOING</span>
                             </div>
-                            <p class="w-full text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                mattis,
-                                purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac elit. </p>
+                            <p class="w-full text-wrap text-xs ">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Fusce mattis, purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac
+                                elit. </p>
                         </div>
                         <hr class="border-b-0 border-slate-400 my-1 ">
                     </li>
@@ -56,9 +59,25 @@
                                     Kawan</span>
                                 <span class="w-1/3 text-right">ONGOING</span>
                             </div>
-                            <p class="w-full text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                mattis,
-                                purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac elit. </p>
+                            <p class="w-full text-wrap text-xs ">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Fusce mattis, purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac
+                                elit. </p>
+                        </div>
+                        <hr class="border-b-0 border-slate-400 my-1 ">
+                    </li>
+                    <li>
+                        <div class="flex flex-col">
+                            <div class="flex flex-row">
+                                <span class="w-2/3 max-w-full text-wrap h-10 max-h-10 leading-tight font-bold">Main Game
+                                    Bersama Kawan
+                                    Kawan</span>
+                                <span class="w-1/3 text-right">ONGOING</span>
+                            </div>
+                            <p class="w-full text-wrap text-xs ">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Fusce mattis, purus ut iaculis fermentum, dui lacus gravida dolor, in vulputate eros sem ac
+                                elit. </p>
                         </div>
                         <hr class="border-b-0 border-slate-400 my-1 ">
                     </li>
@@ -68,12 +87,8 @@
     </main>
 </template>
 
-<script>
-export default {
-    methods: {
-        addTodo() {
-
-        }
-    }
-}
+<script setup>
+useHead({
+    title: 'TODO - List',
+})
 </script>
